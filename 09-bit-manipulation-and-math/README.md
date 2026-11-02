@@ -14,3 +14,5 @@
 4. [Комбинаторика и вероятность](04-combinatorics-and-probability/README.md)
 5. [Рандомизированные алгоритмы](05-randomized-algorithms/README.md)
 6. [Основы вычислительной геометрии](06-computational-geometry-basics/README.md)
+
+В конце каждой темы есть ссылки на каноничные и современные примеры C# и практические сценарии. Общие команды доступны в [инструкции запуска](../examples/README.md).

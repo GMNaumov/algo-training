@@ -34,4 +34,22 @@
 
 **Практика.** Выберите коллекции для истории отмены, реестра уникальных email и ближайшего по времени события. Ответ: стек, множество, очередь с приоритетом. Объясните, какие операции сделали выбор естественным.
 
-Справка: [выбор коллекции](https://learn.microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-class), [PriorityQueue](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.priorityqueue-2). Доступность API проверяется для выбранной в будущем версии .NET.
+Справка: [выбор коллекции](https://learn.microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-class), [PriorityQueue](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.priorityqueue-2). Примеры используют .NET 10; при переносе на другую версию проверяйте доступность API.
+
+## Примеры на C#
+
+| Файл | Что изучать |
+|---|---|
+| [Canonical.cs](examples/Canonical.cs) | Явные шаги алгоритма или устройство структуры; условия и затраты объяснены в комментариях. |
+| [Modern.cs](examples/Modern.cs) | Современная запись, библиотечная замена или другой компромисс по времени и памяти. |
+| [Applications.cs](examples/Applications.cs) | Небольшие практические сценарии, вызовы реализаций и ожидаемые результаты для самопроверки. |
+
+Сначала получите ответ вручную, затем прочитайте каноничную версию и сравните с современной. В `Applications.Run` ожидаемый ответ указан первым аргументом проверки. Изменяйте вход и проверяйте, сохраняются ли условия применимости алгоритма.
+
+Запуск из корня репозитория с установленным .NET 10 SDK:
+
+```powershell
+dotnet run --project examples/AlgoTraining.csproj -- 01-foundations/05-dotnet-collections
+```
+
+Устройство проекта, смысл современных конструкций и общие команды описаны в [инструкции запуска](../../examples/README.md). В методических темах код демонстрирует учебный сценарий; в алгоритмических — реализацию и её применение.
